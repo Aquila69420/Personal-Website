@@ -1,10 +1,87 @@
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
 body {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  color: #FCA311;
+  background-color: #14213D;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Header styles */
+header {
+  background-color: #14213D;
+  color: #FCA311;
+  padding: 20px;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#typed-header {
+  animation: type 1s;
+  overflow: hidden; /* Ensure text doesn't overflow during animation */
+  white-space: nowrap; /* Prevent line breaks during animation */
+  border-right: 2px solid #FCA311; /* Add a blinking cursor effect */
+  margin-bottom: 10px; /* Add spacing after animation */
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+/* Scroll down arrow styles */
+#scroll-down-arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #FCA311;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+#scroll-down-arrow.show {
+  opacity: 1;
+}
+
+/* Rest of your CSS styles... */
+
+
+/* body {
   font-family: 'Roboto Mono', monospace;
   font-size: 16px;
   color: #FCA311;
   margin: 0;
   padding: 0;
   background-color: #14213D;
+  flex-direction:column;
 }
 
 header {
@@ -12,7 +89,8 @@ header {
   color: #FCA311;
   padding: 20px;
   text-align: center;
-  height: 100vh; /* This makes the header take up the full height of the viewport */
+  height: 100vh; 
+  width: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,9 +105,22 @@ header {
   from {
       width: 0;
   }
+} */
+
+.social-icons a {
+  font-size: x-large;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  color: #FCA311;
+  display: inline-flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
 
-#scroll-down-arrow {
+/* #scroll-down-arrow {
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -49,9 +140,83 @@ header {
 
 #scroll-down-arrow.show {
   opacity: 1;
+} */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+}
+
+.project-card {
+  background-color: #1B3B53;
+  border-radius: 6px;
+  padding: 16px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card a {
+  color: inherit; /* Change this to the desired color */
+  text-decoration: none;
+  }
+
+.project-card p {
+  text-align: justify;
+ }
+
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill-card {
+  background-color: #14213D;
+  color: #FCA311;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.skill-card i {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.skill-card p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dart-logo {
+  filter: brightness(0) invert(1) sepia(1) saturate(7) hue-rotate(350deg) brightness(100%) contrast(100%);
+  color: #FCA311 !important;
+}
 
 nav ul {
   list-style: none;
@@ -74,4 +239,78 @@ section {
 
 footer {
   background-color: #14213D;
+}
+
+body {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  color: #FCA311;
+  margin: 0;
+  padding: 0;
+  background-color: #14213D;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+
+.flip-card:focus {
+    outline: 0;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card:focus .flip-card-inner{
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.flip-card-front {
+  background: linear-gradient(to left, #4364f7, #6fb1fc);
+  color: black;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card-back {
+  background: linear-gradient(to right, #4364f7, #6fb1fc);
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h3 {
+  font-size: 20px;
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+  color: #fff;
 }
