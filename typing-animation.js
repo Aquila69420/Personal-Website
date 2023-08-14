@@ -1,52 +1,28 @@
-// // This is the text that will be typed out
-// const typedText = "Hi there, I'm Dhruv.";
+document.addEventListener("DOMContentLoaded", function() {
+  // This is the text that will be typed out
+  const typedText = "Hi there, I'm Dhruv.";
 
-// // This is the delay between each character being typed
-// const typeDelay = 100;
+  // This is the delay between each character being typed
+  const typeDelay = 100;
 
-// // This function types out the text in the header one character at a time
-// function typeHeader() {
-//   let i = 0;
-//   const typedHeader = document.getElementById("typed-header");
+  // This function types out the text in the header one character at a time
+  function typeHeader() {
+    let i = 0;
+    const typedHeader = document.getElementById("typed-header");
 
-//   const typeInterval = setInterval(function() {
-//     if (i < typedText.length) {
-//       typedHeader.innerHTML += typedText.charAt(i);
-//       i++;
-//     } else {
-//       clearInterval(typeInterval);
-//     }
-//   }, typeDelay);
-// }
+    const typeInterval = setInterval(function() {
+      if (i < typedText.length) {
+        typedHeader.innerHTML += typedText.charAt(i);
+        i++;
+      } else {
+        clearInterval(typeInterval);
+      }
+    }, typeDelay);
+  }
 
-// // This runs the typeHeader function after the page has loaded
-// window.onload = function() {
-//   typeHeader();
-// };    
-
-// This is the text that will be typed out
-const typedText = "Hi there, I'm Dhruv.";
-
-// This is the delay between each character being typed
-const typeDelay = 100;
-
-// This function types out the text in the header one character at a time
-function typeHeader() {
-  let i = 0;
-  const typedHeader = document.getElementById("typed-header");
-  typedHeader.textContent = ''; // Clear existing content
-
-  const typeInterval = setInterval(function() {
-    if (i < typedText.length) {
-      typedHeader.textContent += typedText.charAt(i);
-      i++;
-    } else {
-      clearInterval(typeInterval);
-    }
-  }, typeDelay);
-}
-
-// This runs the typeHeader function after the page has loaded
-window.onload = function() {
+  // This runs the typeHeader function after the page has loaded
   typeHeader();
-};
+  
+  // Scroll to the top of the page
+  window.scrollTo(0, 0);
+});

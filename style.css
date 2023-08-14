@@ -5,32 +5,36 @@
   box-sizing: border-box;
 }
 
-/* Global styles */
-body {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 16px;
-  color: #FCA311;
-  background-color: #14213D;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-
 .container {
   max-width: 800px;
-  margin: 0 auto;
+  margin-top: 50px;
+  height: max-content;
 }
+
+.experience-container {
+  max-width: 800px;
+  margin-top: 50px;
+  /* height: 500px; */
+}
+
+.header-container {
+  max-width: 800px;
+  height: 10rem;
+  margin-bottom: 100px;
+}
+
+/* Add spacing between sections */
+section {
+  margin-bottom: 10px;
+}
+
 
 /* Header styles */
 header {
   background-color: #14213D;
   color: #FCA311;
-  padding: 20px;
   text-align: center;
-  height: 100vh;
+  height: 65rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,14 +58,14 @@ header {
 /* Scroll down arrow styles */
 #scroll-down-arrow {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  width: 0;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid #FCA311;
+  width: 3rem;
+  height: 4rem;
+  border-left: 23.5px solid transparent;
+  border-right: 23.5px solid transparent;
+  border-top: 30px solid #FCA311;
   cursor: pointer;
   opacity: 0;
   transition: opacity 1s ease-in-out;
@@ -70,42 +74,6 @@ header {
 #scroll-down-arrow.show {
   opacity: 1;
 }
-
-/* Rest of your CSS styles... */
-
-
-/* body {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 16px;
-  color: #FCA311;
-  margin: 0;
-  padding: 0;
-  background-color: #14213D;
-  flex-direction:column;
-}
-
-header {
-  background-color: #14213D;
-  color: #FCA311;
-  padding: 20px;
-  text-align: center;
-  height: 100vh; 
-  width: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-#typed-header {
-  animation: type 1s;
-}
-
-@keyframes type {
-  from {
-      width: 0;
-  }
-} */
 
 .social-icons a {
   font-size: x-large;
@@ -120,32 +88,11 @@ header {
   margin-top: 50px;
 }
 
-/* #scroll-down-arrow {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid transparent;
-  border-top-width: 20px;
-  border-top-style: solid;
-  border-top-color: #FCA311;
-  cursor: pointer;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-#scroll-down-arrow.show {
-  opacity: 1;
-} */
-
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 16px;
+  margin-bottom: 4rem;
 }
 
 .project-card {
@@ -162,20 +109,13 @@ header {
 }
 
 .project-card a {
-  color: inherit; /* Change this to the desired color */
   text-decoration: none;
+  color:#FCA311;
   }
 
 .project-card p {
   text-align: justify;
  }
-
-
-h3 {
-  margin-top: 0;
-  margin-bottom: 8px;
-}
-
 
 .skills {
   display: flex;
@@ -233,10 +173,6 @@ nav a {
   display: block;
 }
 
-section {
-  padding: 20px;
-}
-
 footer {
   background-color: #14213D;
 }
@@ -246,7 +182,7 @@ body {
   flex-direction:column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100rem;
   font-family: 'Roboto Mono', monospace;
   font-size: 16px;
   color: #FCA311;
@@ -257,9 +193,11 @@ body {
 
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 200px;
   perspective: 1000px;
+  border-radius: 6px;
+  padding: 16px;
 }
 
 .flip-card-inner {
@@ -281,6 +219,9 @@ body {
 .flip-card:hover .flip-card-inner,
 .flip-card:focus .flip-card-inner{
   transform: rotateY(180deg);
+  .flip-card-back{
+    opacity: 1;
+  }
 }
 
 .flip-card-front,
@@ -291,8 +232,8 @@ body {
 }
 
 .flip-card-front {
-  background: linear-gradient(to left, #4364f7, #6fb1fc);
-  color: black;
+  background-color: #1B3B53;
+  color:#FCA311;
   z-index: 2;
   display: flex;
   justify-content: center;
@@ -300,17 +241,29 @@ body {
 }
 
 .flip-card-back {
-  background: linear-gradient(to right, #4364f7, #6fb1fc);
-  color: white;
+  background-color: #1B3B53;
+  color:#FCA311;
   transform: rotateY(180deg);
   z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
 }
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-family: 'Roboto Mono', monospace;
+  color:#FCA311;
+  font-size: 24px;
+}
+
 h3 {
   font-size: 20px;
   font-family: Verdana, sans-serif;
   font-weight: bold;
-  color: #fff;
+  color:#FCA311;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
