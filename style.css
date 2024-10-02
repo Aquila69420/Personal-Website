@@ -1,4 +1,3 @@
-/* Reset default margin and padding for all elements */
 * {
   margin: 0;
   padding: 0;
@@ -14,27 +13,25 @@
 .experience-container {
   max-width: 800px;
   margin-top: 50px;
-  /* height: 500px; */
 }
 
 .header-container {
-  max-width: 800px;
-  height: 10rem;
+  align-content: center;
+  width: 100%;
+  height: 100%;
   margin-bottom: 100px;
 }
 
-/* Add spacing between sections */
 section {
   margin-bottom: 10px;
 }
 
-
-/* Header styles */
 header {
   background-color: #14213D;
   color: #FCA311;
   text-align: center;
-  height: 65rem;
+  align-content: center;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,10 +40,10 @@ header {
 
 #typed-header {
   animation: type 1s;
-  overflow: hidden; /* Ensure text doesn't overflow during animation */
-  white-space: nowrap; /* Prevent line breaks during animation */
-  border-right: 2px solid #FCA311; /* Add a blinking cursor effect */
-  margin-bottom: 10px; /* Add spacing after animation */
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #FCA311;
+  margin-bottom: 10px;
 }
 
 @keyframes type {
@@ -55,7 +52,6 @@ header {
   }
 }
 
-/* Scroll down arrow styles */
 #scroll-down-arrow {
   position: absolute;
   bottom: 10px;

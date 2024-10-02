@@ -14,26 +14,28 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
 </head>
 
-<body>
-  <header>
-    <div class="header-container">
-      <h1 id="typed-header"></h1>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/dhruv-khanna-b89772224/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/Aquila69420" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="mailto:dk1g22@soton.ac.uk" target="_blank"><i class="fa fa-envelope"></i></a>
-        <script src="social-icons-animation.js"></script>
-      </div>
-    </div>
-  </header>
-  <script src="typing-animation.js"></script>
 
-  <div id="scroll-down-arrow"></div>
-  <script src="scroll-down-arrow.js"></script>
+<!-- TODO: Update icons for skills -->
+<body>
+  <div class="header-container">
+    <header>
+        <h1 id="typed-header"></h1>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/dhruv-khanna-b89772224/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Aquila69420" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="mailto:dk1g22@soton.ac.uk" target="_blank"><i class="fa fa-envelope"></i></a>
+          <script src="social-icons-animation.js"></script>
+        </div>
+      <!-- </div> -->
+    </header>
+    <script src="typing-animation.js"></script>
+
+    <div id="scroll-down-arrow"></div>
+    <script src="scroll-down-arrow.js"></script>
+  </div>
 
   <section>
     <div class="container">
-      <!-- About Me section -->
       <h2>ABOUT</h2>
       <p>I am a computer science student at the University of Southampton, eager to explore the intricacies of the field and make a positive impact in the world. With a passion for technology and programming, I aim to gain a strong foundation in computer science, learn the latest technologies, and contribute to this exciting industry. Inspired by the innovative solutions and cutting-edge technology, I look forward to discovering my own path and being part of this rapidly growing industry.</p>
     </div>
@@ -66,80 +68,334 @@
 
   <section>
     <div class="container">
-      <!-- Portfolio section -->
       <h2>PROJECTS</h2>
       <div class="projects-grid">
+        <div class="project-card">
+          <h3>CONA</h3>
+          <p>A Cypher-like domain specific language for querying n4j graph databases.</p>
+        </div>
+        <div class="project-card">
+          <h3>Distributed System</h3>
+          <p>A file storage distributed system based on networked (TCP/IP) message passing concurrency.</p>
+        </div>
+        <div class="project-card">
+          <a href="https://gitlab.com/dulapahv/coding_club_2024" target="_blank">
+          <h3>Code Club Website</h3>
+          <p>Website for thre Code Club education platform built with the MERN stack.</p>
+          </a>
+        </div>
+        <div class="project-card">
+          <h3>Runway Redeclaration Tool</h3>
+          <p>Airport Calculation Tool built with JavaFX, communications, media, files, APIs and extensions.</p>
+        </div>
+        <div class="project-card">
+          <h3>TetrECS</h3>
+          <p>Tetris game built with JavaFX, custom components, graphics & animation, listeners, properties, binding, and extensions.</p>
+        </div>
+        <div class="project-card">
+          <h3>Whatsapp Chat Scraper</h3>
+          <p>Python chat scraper that analyses and returns conversation and text details.</p>
+        </div>
+        <div class="project-card">
+          <h3>Tennis Club DBMS</h3>
+          <p>GUI CRUD database management system built using PyQt5, MySQL and Python.</p>
+        </div>
+        <div class="project-card">
+          <h3>Terminal Chat Server</h3>
+          <p>Networked Terminal-based Client-Server chat application that allows multiple users to send TCP/IP messages.</p>
+        </div>
         <div class="project-card">
           <h3>Mathology</h3>
           <p>A Python library for mathematical computing.</p>
         </div>
         <div class="project-card">
           <a href="https://github.com/Aquila69420/WeatherMine" target="_blank">
-            <h3>Weathermine</h3>
-            <p>A GUI based weather app powered by PyQt5 and Accuweather.</p>
+          <h3>Weathermine</h3>
+          <p>A GUI based weather app powered by PyQt5 and Accuweather.</p>
           </a>
         </div>
         <div class="project-card">
           <h3>Pedalus</h3>
           <p>An AI-powered guitar effects pedal.</p>
         </div>
+        <div class="project-card">
+          <h3>THεOPOULA</h3>
+          <p>A langevin-based deep learning optimiser inspired by the research paper of the same name.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- 
+  <section>
+    <div class="container">
+      <h2>CERTIFICATIONS</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <a href="https://www.udemy.com/certificate/UC-d39dc2bd-2eb6-4134-a999-32b8a1988cf2/" target="_blank">
+          <h3>Certified Artificial Intelligence Developer Program</h3>
+          </a>
+        </div>
+        <div class="project-card">
+          <a href="https://www.datacamp.com/certificate/SQA0015747812670" target="_blank">
+          <h3>Datacamp SQL Associate</h3>
+          </a>
+        </div>
+        <div class="project-card">
+          <a href="https://www.datacamp.com/skill-verification/AIF0023134092440" target="_blank">
+          <h3>Datacamp AI Fundamentals</h3>
+          </a>
+        </div>
+        <div class="project-card">
+          <a href="https://www.guvi.in/verify-certificate?id=5D6Csu93761Po1cH32" target="_blank">
+          <h3>Python Facial Recognition App</h3>
+          </a>
+        </div>
+        <div class="project-card">
+          <a href="https://www.datacamp.com/skill-verification/DL0037553693041" target="_blank">
+          <h3>Datacamp Data Literacy</h3>
+          </a>
+        </div>
+        <div class="project-card">
+          <a href="https://www.linkedin.com/learning/certificates/94516064a60c7af77a316e62d5a1f4e8ff3c9de55a5944bbf921b5ff2495ee33?u=35146660" target="_blank">
+          <h3>Java Essential Training</h3>
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
-    <section>
-      <div class="container">
-        <!-- Skills section -->
-        <h2>SKILLS</h2>
-        <div class="skills">
-          <div class="skill-card">
-            <i class="fab fa-python"></i>
-            <p>Python</p>
+  <section>
+    <div class="container">
+      <h2>SKILLS</h2>
+      <div class="skills">
+        <div class="skill-card">
+          <i class="fab fa-python"></i>
+          <p>Python</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="assets/dart-logo.svg">
           </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <img src="assets/dart-logo.svg">
-            </div>
-            <p>Dart</p>
+          <p>Dart</p>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-java"></i>
+          <p>Java</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-js"></i>
           </div>
-          <div class="skill-card">
-            <i class="fab fa-java"></i>
-            <p>Java</p>
+          <p>JavaScript</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-html5"></i>
           </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <i class="fab fa-js"></i>
-            </div>
-            <p>JavaScript</p>
+          <p>HTML</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-css3-alt"></i>
           </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <i class="fab fa-html5"></i>
-            </div>
-            <p>HTML</p>
+          <p>CSS</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-linux"></i>
           </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <i class="fab fa-css3-alt"></i>
-            </div>
-            <p>CSS</p>
+          <p>Linux</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
           </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <i class="fab fa-linux"></i>
-            </div>
-            <p>Linux</p>
+          <p>SQL</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
           </div>
-          <div class="skill-card">
-            <div class="skill-icon">
-              <i class="fas fa-database"></i>
-            </div>
-            <p>SQL</p>
+          <p>Pytorch</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
           </div>
-          <!-- Add more skill cards -->
+          <p>Tensorflow</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>Machine Learning</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>Natural Language Processing</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>Snowflake</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>NoSQL</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>MongoDB</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>Flutter</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>JavaFX</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>Qt</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>React</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>Express</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>Tanstack</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>Axios</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>Yup</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>Git</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>Gitlab CI/CD</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>Github</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>Microsoft Office Suite</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>Bash</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>Haskell</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>C</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>C#</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>AGILE</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>JIRA</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>SCRUM</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>Creativity</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>Leadership</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>Adaptability</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <p>Communication</p>
         </div>
       </div>
-    </section>
-    <script src="main.js"></script>
-    <script src="scroll-to-top.js"></script>
+    </div>
+  </section> -->
+
+  <script src="main.js"></script>
+  <script src="scroll-to-top.js"></script>
   </body>
