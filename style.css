@@ -168,26 +168,7 @@ header {
   filter: brightness(0) invert(1) sepia(1) saturate(7) hue-rotate(350deg) brightness(100%) contrast(100%);
   color: #FCA311 !important;
 }
-/*
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-}
 
-nav a {
-  color: #FCA311;
-  text-decoration: none;
-  padding: 20px;
-  display: block;
-}
-
-footer {
-  background-color: #14213D;
-}
-*/
 body {
   display: flex;
   flex-direction:column;
@@ -245,12 +226,12 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+  border-radius: 6px;
 }
 
 .flip-card-front {
   background-color: #1B3B53;
   color:#FCA311;
-  border-radius: 6px;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -259,8 +240,8 @@ body {
 }
 
 .flip-card-back {
-  border-radius: 6px;
   background-color: #1B3B53;
+  padding: 10px;
   color:#FCA311;
   transform: rotateY(180deg);
   z-index: 1;
